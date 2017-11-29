@@ -1,0 +1,33 @@
+{
+	"host.get":
+	[
+		{
+	    	"status" : 1,
+		    "output" : 
+			[
+				"hostid",
+				"host"
+			]
+		}
+	],
+
+	"trigger.get":
+	[
+		{
+	        "output":
+	        [
+	        	"triggerid",
+	            "description",
+	            "priority"
+	        ]
+		},
+		{
+			"triggerids": "15243",
+        	"output":
+        	[ 
+    			"description", 
+    			"value"
+    		]
+        }
+    ]
+}
