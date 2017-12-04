@@ -48,9 +48,6 @@ def main():
 	args = parser.parse_args()
 	ZN = ZabbixNotifier(ConfigName=args.conf, LoggerName=args.log)
 	ZN.request(args.task, args.number)
-	# ZN.request('host.get', 0)
-	# ZN.request('trigger.get', 0)
-	# ZN.search_reqest('host.get')
 
 if __name__ == '__main__':
 	main()

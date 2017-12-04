@@ -1,1 +1,1 @@
-readme.md
+You can find a docs on the https://github.com/Alexander35/Telegram_bot_Server.git package page.
