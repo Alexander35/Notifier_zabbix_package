@@ -33,6 +33,9 @@ class ZabbixNotifier(GeneralClient):
 		self.send(MSG)
 
 	def prepare_msg(self, raw_data, request):
+		# nothing to send
+		if raw_data['result'] == []:
+			quit(0) 
 		Msg = msg_pb2.Msg()
 		Msg.title = request
 		Msg.text = json.dumps(raw_data['result'], indent=4)
